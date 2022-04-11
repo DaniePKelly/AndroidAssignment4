@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeNlActivity">
+
+
+        <EditText
+            android:id="@+id/editYearsAtCurrentAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="332dp"
+            android:ems="10"
+            android:hint="Years At Current Address"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editCostOfReplacement"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editCostOfReplacement"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentInsurance" />
+
+        <TextView
+            android:id="@+id/yearsAtCurrentAddressText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="228dp"
+            android:text="Years at current address"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/distanceFromFireHallText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/distanceFromFireHallText"
+            app:layout_constraintTop_toBottomOf="@+id/contentReplacmentCostText" />
+
+        <EditText
+            android:id="@+id/editFromFireHall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:ems="10"
+            android:hint="Distance from Fire Hall"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editCostOfReplacement"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editCostOfReplacement"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentInsurance" />
+
+        <TextView
+            android:id="@+id/distanceFromFireHallText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="136dp"
+            android:text="Distance From Fire Hall"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/distanceFromHydrantText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/distanceFromHydrantText"
+            app:layout_constraintTop_toBottomOf="@+id/contentReplacmentCostText" />
+
+        <EditText
+            android:id="@+id/editCostOfReplacement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="Cost to Replace"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editCurrentInsurance"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editCurrentInsurance"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentInsurance" />
+
+        <TextView
+            android:id="@+id/distanceFromHydrantText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="Distance From Hydrant"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/contentReplacmentCostText"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/contentReplacmentCostText"
+            app:layout_constraintTop_toBottomOf="@+id/contentReplacmentCostText" />
+
+        <TextView
+            android:id="@+id/firstNameApplicantText2"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/first_name_applicant"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/startDateText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/startDateText"
+            app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+        <TextView
+            android:id="@+id/firstNameApplicantText3"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/first_name_applicant"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/startDateText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/startDateText"
+            app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="60dp"
+            android:gravity="top|left"
+            android:text="@string/welcome"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="350dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/for_your_convenience_please_have_your_current_home_insurance_policy_information_at_hand"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+        <TextView
+            android:id="@+id/postalCodeText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/postal_code_of_the_insured_residence"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoText" />
+
+        <EditText
+            android:id="@+id/editTextTextPostal"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/postal_code"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/postalCodeText"
+            app:layout_constraintTop_toBottomOf="@+id/infoText" />
+
+        <TextView
+            android:id="@+id/typeOfInsuranceTextView"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/type_of_property_insurance_policy"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postalCodeText" />
+
+        <Spinner
+            android:id="@+id/typeOfPropertySpinner"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="28dp"
+            android:autofillHints="Please Select One"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostal"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostal"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/startDateText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/when_do_you_need_the_policy_to_begin"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typeOfInsuranceTextView" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:hint="@string/mm_dd_yyyy"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@+id/typeOfPropertySpinner"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/typeOfPropertySpinner"
+            app:layout_constraintTop_toBottomOf="@+id/typeOfPropertySpinner" />
+
+        <TextView
+            android:id="@+id/firstNameApplicantText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/first_name_applicant"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/startDateText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/startDateText"
+            app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+        <TextView
+            android:id="@+id/lastNameApplicantText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/last_name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/firstNameApplicantText2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/firstNameApplicantText2"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameApplicantText2" />
+
+        <TextView
+            android:id="@+id/custPhoneText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/phone"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/lastNameApplicantText"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/lastNameApplicantText"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameApplicantText" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/phoneTemplate"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editLastNameApplicant"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editLastNameApplicant"
+            app:layout_constraintTop_toBottomOf="@+id/editLastNameApplicant" />
+
+        <EditText
+            android:id="@+id/editFirstNameApplicant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+            app:layout_constraintStart_toStartOf="@+id/editTextDate"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+        <EditText
+            android:id="@+id/editLastNameApplicant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editFirstNameApplicant"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editFirstNameApplicant"
+            app:layout_constraintTop_toBottomOf="@+id/editFirstNameApplicant" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:text="Send Mail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editYearsAtCurrentAdress"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="@+id/yearsAtCurrentAddressText"
+            app:layout_constraintTop_toBottomOf="@+id/yearsAtCurrentAddressText" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/custPhoneText"
+            app:layout_constraintStart_toStartOf="@+id/custPhoneText"
+            app:layout_constraintTop_toBottomOf="@+id/custPhoneText" />
+
+        <TextView
+            android:id="@+id/streetAddressText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/street_adress"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/emailText"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/emailText"
+            app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="@string/address"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextEmailAddress"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/name_host_ext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <EditText
+            android:id="@+id/editCurrentInsurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Name Of Company"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextAddress"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+        <TextView
+            android:id="@+id/currentInsurerText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/current_insurance_company"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/streetAddressText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/streetAddressText"
+            app:layout_constraintTop_toBottomOf="@+id/streetAddressText" />
+
+        <TextView
+            android:id="@+id/contentReplacmentCostText"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/content_replacement_cost"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/currentInsurerText"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="@+id/currentInsurerText"
+            app:layout_constraintTop_toBottomOf="@+id/currentInsurerText" />
+
+        <EditText
+            android:id="@+id/editDistanceFromHydrant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:ems="10"
+            android:hint="Distance from Hydrant"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editCostOfReplacement"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editCostOfReplacement"
+            app:layout_constraintTop_toBottomOf="@+id/editCurrentInsurance" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

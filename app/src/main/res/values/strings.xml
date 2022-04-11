@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Insurance_Application</string>
+    <string name="welcome">Welcome</string>
+    <string name="for_your_convenience_please_have_your_current_home_insurance_policy_information_at_hand">For your convenience, please have your current home insurance policy information at hand</string>
+    <string name="postal_code_of_the_insured_residence">Postal code of the insured residence</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="type_of_property_insurance_policy">Type of property insurance policy</string>
+    <string name="when_do_you_need_the_policy_to_begin">When do you need the policy to begin?</string>
+    <string name="mm_dd_yyyy">MM-DD-YYYY</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name_applicant">First name/Applicant</string>
+    <string name="phone">Phone</string>
+    <string name="phoneTemplate">***-***-*****</string>
+    <string name="email">Email</string>
+    <string name="street_adress">Street Adress</string>
+    <string name="address">Address</string>
+    <string name="name_host_ext">name@host.ext</string>
+    <string name="current_insurance_company">Current Insurance Company</string>
+    <string name="content_replacement_cost">Content replacement cost</string>
+    <string-array name="type_of_property">
+        <item></item>
+        <item>Homeowner</item>
+        <item>Condominium</item>
+        <item>Tenant</item>
+    </string-array>
+</resources>
